@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:text="@string/title">
+  <TableLayout 
+		android:id="@+id/purchScanTable1" 
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content">
+		<TableRow 
+			android:id="@+id/table1Row1" 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content">
+			<TextView 
+				android:id="@+id/status_label"
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content"
+				android:text="Current Status:  " />
+			<TextView 
+				android:id="@+id/status_data" 
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" 
+				android:text=" Scan a Tag" />
+		</TableRow>		
+		<View
+ 		    android:id="@+id/purchScanES1" 
+ 		    android:layout_width="match_parent"
+			android:layout_height="55px"
+			android:layout_below="@id/status_label"
+			android:background="#000000" />	 
+		<TableRow 
+			android:id="@+id/table1Row2" 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content">
+			<TextView 
+				android:id="@+id/block_0_label"
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content"
+				android:text="BLOCK 0:  " />
+			<TextView 
+				android:id="@+id/block_0_data" 
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" 
+				android:text=" " />
+		</TableRow>		
+		<TableRow 
+			android:id="@+id/table1Row3" 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content">
+			<TextView 
+				android:id="@+id/block_1_label"
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content"
+				android:text="BLOCK 1:  " />
+			<TextView 
+				android:id="@+id/block_1_data" 
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" 
+				android:text=" " />
+		</TableRow>	
+	</TableLayout> 
+	<View
+ 		    android:id="@+id/purchScanES1" 
+ 		    android:layout_width="match_parent"
+			android:layout_height="75px"
+			android:layout_below="@id/purchScanTable1"
+			android:background="#000000" />	  
+	<Button 
+				android:id="@+id/clear_but" 
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"  
+				android:layout_below="@id/purchScanES1"
+				android:gravity="center_horizontal"				 
+				android:text="Clear" />     
+</RelativeLayout>
